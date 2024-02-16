@@ -1,0 +1,29 @@
+.form{
+ margin: 0; 
+padding: 0;
+background: #333;
+}
+.button{
+  height: 40px;
+  width: 100px;
+  background: yellow;
+}
+.input{
+  height: 2rem;
+  width: 20rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+}
+.inputDesc{
+  height: 4rem;
+  width: 23rem;
+  font-size: 2.5rem;
+  border-radius: 20px;
+  color: red;
+}
+.text{
+  font-size: 2rem;
+}
+.textA{
+  font-size: 3rem;
+}

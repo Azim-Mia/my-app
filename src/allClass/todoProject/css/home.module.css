@@ -1,0 +1,9 @@
+.homeDivContainer{
+  height: 400px;
+  width: 600px;
+  background: #000;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 2px 5px 3px yellow, -2px -5px 3px ;
+  color: #fff;
+}
