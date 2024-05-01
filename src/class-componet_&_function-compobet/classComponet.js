@@ -3,10 +3,10 @@ import React, {Component} from 'react';
   render(){
     return (
       <div>
-   <h1>{this.props.name}</h1>
+   <h1>11111ccccaaalll:{this.props.name}</h1>
    <hr/>
    </div>
     )
   }
 }
-export default CardClassComponent
+export default CardClassComponent;

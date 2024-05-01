@@ -1,4 +1,5 @@
 import React from 'react';
+import {MyClassComponent} from '/data/data/com.termux/files/home/my-app/src/allClass/classComponent.js';
 import WindowMatchTextWidth from '/data/data/com.termux/files/home/my-app/src/allClass/windowWithMatchTextWidth.js';
 import Reactquery from '/data/data/com.termux/files/home/my-app/src/allClass/reactquery/reactquery.js';
 import Allrouting from '/data/data/com.termux/files/home/my-app/src/allClass/routerV58/routingAll.js';
@@ -44,6 +45,7 @@ function App(){
   }
   return (
   <div>
+    <div><MyClassComponent /></div>
   <div><WindowMatchTextWidth /></div>
   <div><Reactquery /></div>
       <div><Allrouting /></div>
