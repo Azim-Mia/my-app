@@ -10,4 +10,4 @@ function StateHooks(){
     <button onClick={hooks}>useStateHooksincriment</button><hr/></div>
     )
 }
-export default StateHooks;
+export default React.memo(StateHooks);

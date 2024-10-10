@@ -45,4 +45,5 @@ try{
     {countries && <Component key={countries.id} countries={filteredCountries} onRemoveCountry={handleRemoveCountry} />}
   </div>
 }
-export default CountryApp;
+
+export default React.memo(CountryApp);

@@ -12,4 +12,4 @@ const  handleRemoveCountry=(name)=>{
   })}
   </section>
 }
-export default Component;
+export default React.memo(Component);

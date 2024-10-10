@@ -3,10 +3,10 @@ export class MyClassComponent extends Component{
   constructor(props){
     super(props);
     this.state={
-      data:null,
+      data:"class component stuctute",
     };
   }
-  componentDidMount(){
+ /* componentDidMount(){
     setTimeout(()=>{
     this.setState({data:"componentDidMount"})
     },1000)
@@ -19,7 +19,7 @@ export class MyClassComponent extends Component{
   componentWillUnmount(){
     alert("componentWillUnmount")
     //console("component is unmount")
-  }
+  }*/
   render(){
     return <div><p>{this.state.data}</p></div>
   }

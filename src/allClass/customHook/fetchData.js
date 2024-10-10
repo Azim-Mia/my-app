@@ -1,14 +1,13 @@
 import {useState,useEffect} from 'react'
-const useFetch=(url)=>{
+const useFetch=(url,options)=>{
   const [data, setData]=useState(null)
 const [isLodingPage, setLodingPage]=useState(true)
 const [isError, setError]=useState(false)
-
 useEffect(()=>{
-   fetch(url)
+   fetch(url,options)
   .then((res)=>{
     if(!res.ok){
-      throw Error('not found fetch data')
+    throw Error("not found fetch data");
     }else{
       return res.json()
     }
@@ -21,7 +20,7 @@ useEffect(()=>{
     setError(error.message);
     setLodingPage(false)
   })
-},[url]);
+},[url,options]);
   return {data, isLodingPage, isError}
 }
 export default useFetch;

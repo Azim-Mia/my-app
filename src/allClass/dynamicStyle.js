@@ -20,4 +20,4 @@ const DynamicStyle=()=>{
   }}>DynamicStyle</h1>
   </div>
 }
-export default DynamicStyle ;
+export default React.memo(DynamicStyle) ;

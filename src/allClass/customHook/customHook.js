@@ -1,22 +1,27 @@
 import React from 'react'
 import useFetch from './fetchData.js'
 const CustomHook=()=>{
-const {data, isLodingPage, isError}=useFetch("http://localhost:4020/api/users/getAllUser");
+const options = {
+method: 'GET',
+headers: {
+'Content-Type': 'application/json',
+},
+body: JSON.stringify(),
+};
+const {data, isLodingPage, isError}=useFetch("http://localhost:3001/read",options);
 const lodingMessage=<h1>This page is loding..</h1>
 const errorMessage=<h1>Not found fetch data</h1>
 const Element=data && 
-data.payload.users.map((todo)=>{
+data.payload.findAll.map((todo)=>{
 return (<div>
-<p key={todo.id}>{todo.name}</p>
-<p key={todo.id}>{todo.email}</p>
-<img style={{height:"200px", width:"200px"}} src="./images/image.jpg" alt="photos"/>
+<p key={todo._id}>{todo.name}</p>
+<p key={todo._id}>{todo.email}</p>
+<img src={todo.image.url} alt="photos" />
 </div>)
 });
 return (
 <div>
-<h1>CustomHook Fetch Data Video 42</h1>
-<h1>Fetch Data mongodb</h1>
-<span>.................</span>
+<h1>Custom Hook</h1>
 {isLodingPage && lodingMessage}
 {isError && errorMessage}
 {Element}

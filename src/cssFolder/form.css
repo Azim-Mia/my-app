@@ -3,10 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-form{
-  background: coral;
-  text-align:center;
-}
 .name{
   font-size: 2rem;
 }
