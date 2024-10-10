@@ -3,13 +3,14 @@ export class MyClassComponent extends Component{
   constructor(props){
     super(props);
     this.state={
-      data:"class component stuctute",
+      data:"class component stuctute one",
+      'title':'',
+      address:'',
+      date:'11.10.2024',
     };
   }
- /* componentDidMount(){
-    setTimeout(()=>{
+ componentDidMount(){
     this.setState({data:"componentDidMount"})
-    },1000)
     };
   componentDidUpdate(prevProps,prevState){
       if(prevProps.data !== this.state.data){
@@ -19,8 +20,21 @@ export class MyClassComponent extends Component{
   componentWillUnmount(){
     alert("componentWillUnmount")
     //console("component is unmount")
-  }*/
+  }
+  handleSubmit =(e)=>{
+    e.preventDefault();
+    alert(this.state.title);
+  }
+  onchangeHandle =(e)=>{
+  this.setState({title:e.target.value})
+  }
   render(){
-    return <div><p>{this.state.data}</p></div>
+  const {title} = this.state;
+    return <div>
+    <p>{this.state.data}</p>
+    <form onSubmit= {this.handleSubmit}>
+    <input type="text" name="title" value ={null} onChange={this.onchangeHandle} />
+    </form>
+    </div>
   }
 }
