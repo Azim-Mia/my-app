@@ -31,6 +31,7 @@ export class MyClassComponent extends Component{
   render(){
   const {title} = this.state;
     return <div>
+    <p>{title}</p>
     <p>{this.state.data}</p>
     <form onSubmit= {this.handleSubmit}>
     <input type="text" name="title" value ={null} onChange={this.onchangeHandle} />

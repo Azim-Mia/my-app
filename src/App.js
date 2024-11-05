@@ -1,5 +1,6 @@
 import React from 'react';
 import {MyClassComponent} from '/data/data/com.termux/files/home/my-app/src/allClass/classComponent.js';
+import Perent from '/data/data/com.termux/files/home/my-app/src/allClass/liftingTheStateUp/index';
 import Inheritance from '../src/allClass/inheritence/text';
 import WindowMatchTextWidth from '/data/data/com.termux/files/home/my-app/src/allClass/windowWithMatchTextWidth.js';
 import Reactquery from '/data/data/com.termux/files/home/my-app/src/allClass/reactquery/reactquery.js';
@@ -41,6 +42,7 @@ import Todo from '../src/allClass/todoV32/home.js'
 function App(){
   return (<>
   <div>
+      <div><Perent /></div>
       <div><Inheritance /></div>
   <div><HeigherOrderComponent /></div>
     <div><HoverMouse /></div>
