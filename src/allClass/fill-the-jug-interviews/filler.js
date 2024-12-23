@@ -24,7 +24,7 @@ const emptyJug =()=>{
   </div>
   <div class="btnContainer">
 <button onClick={fillJug} class="btn"><span>&#8593;</span></button>
-<button onClick={emptyJug} class="btn"><span>&#8595;</span></button>
+<button onClick={emptyJug} className="bg-green-400 p-1text-3xl"><span>&#8595;</span></button>
   </div>
   </>)
 }
