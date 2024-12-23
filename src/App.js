@@ -1,4 +1,5 @@
 import React from 'react';
+import Filler from '/data/data/com.termux/files/home/my-app/src/allClass/fill-the-jug-interviews/filler.js';
 import {MyClassComponent} from '/data/data/com.termux/files/home/my-app/src/allClass/classComponent.js';
 import Perent from '/data/data/com.termux/files/home/my-app/src/allClass/liftingTheStateUp/index';
 import Inheritance from '../src/allClass/inheritence/text';
@@ -42,6 +43,7 @@ import Todo from '../src/allClass/todoV32/home.js'
 function App(){
   return (<>
   <div>
+      <div><Filler /></div>
       <div><Perent /></div>
       <div><Inheritance /></div>
   <div><HeigherOrderComponent /></div>
